@@ -5,3 +5,6 @@ Kelompok Ini terdiri dari :
 3411211094 R Ramadhan Destyanto
 3411211099 Angga Mochamad Kamal
 3411211137 Fahmi Rizki Romdoni Toyib
+
+Bagian CoffeeRehat.html (home) atau rangka awal 
+
