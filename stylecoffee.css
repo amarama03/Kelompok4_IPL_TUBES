@@ -1,37 +1,121 @@
-*,
-html {
-    margin: 0%;
-    padding: 0%;
+:root {
+  --primary: #b6895b;
+  --background: #010101;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
 body {
-    background-color: saddlebrown;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background);
+  color: #fff;
 }
 
-.Navbar{
-    background-color: white;
-
-    width: 100%;
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgb(1, 1, 1, 0, 8);
+  border-bottom: 1px solid #8b6238;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
 }
 
-.ul-Navbar{
-    justify-content: center;
-    height: 100px;
-    display: flex;
-    align-items: center;
+.navbar .Navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
 }
 
-.li-Navbar{
-    list-style-type: none;
-    padding: 20px;
-    margin: 5px;
-    color: black;
-    font-style: Milonga;
-    border-radius: 10px;
+.navbar .Navbar-logo span {
+  color: var(--primary);
 }
-.li-Navbar:hover{
-    background-color:saddlebrown;
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 1.3rem;
+  margin: 0 1rem;
 }
-.a-navbar{
-    color: black;
-    text-decoration: none;
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a:hover::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .Navbar-extra a {
+  color: #fff;
+  margin: 0 0.5rem;
+}
+
+.navbar .Navbar-extra a :hover {
+  color: var(--primary);
+}
+
+#humburger-menu {
+  display: none;
+}
+/*  Media Queries / ubah layar sesuai dengan device  */
+/* Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  #humburger-menu {
+    display: inline-block;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    background-color: #fff;
+    width: 30 rem;
+    height: 100vh;
+    transition: 0.3s;
+  }
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+  .navbar .navbar-nav a {
+    color: var(--background);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+}
+/* Handphone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
 }

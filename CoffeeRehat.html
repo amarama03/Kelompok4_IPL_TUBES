@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Rehat</title>
-    <link rel="stylesheet" href="stylecoffee.css"/>
-</head>
-<body>
-    <div class="Navbar">
-        <ul class="ul-Navbar">
-            <li class="li-Navbar">
-                <a href="#" class="a-navbar">Home</a>
-            </li>
-            <li class="li-Navbar">
-                <a href="menu.html" class="a-navbar" >Menu</a>
-            </li>
-            
-            <li class="li-Navbar">
-                <a href="AboutUs.html" class="a-navbar">About Us</a>
-            </li>
-            <li class="li-Navbar">
-                <a href="iconkeranjang.html" class="a-navbar">Icon keranjang</a>
-            </li>
-            <li class="li-Navbar">
-                <a href="Login.html" class="a-navbar">Login</a>
-            </li>
-            <li class="li-Navbar">
-                <a href="ContactUs.html"class="a-navbar" >Contact Us</a>
-            </li>
-        </ul>
-    </div>    
-</body>
+
+    <!-- fonts dari google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather icon  -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- stylecss -->
+    <link rel="stylesheet" href="stylecoffee.css" />
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="#" class="Navbar-logo">Kopi <span>Rehat</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="#">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="AboutUs.html">About Us</a>
+        <a href="iconkeranjang.html">keranjang</a>
+        <a href="Login.html">Login</a>
+        <a href="ContactUs.html">Contact Us</a>
+      </div>
+
+      <div class="Navbar-extra">
+        <a href="#" id="search"><i data-feather="search"></i></a>
+        <a href="#" id="iconkeranjang"><i data-feather="shopping-cart"></i></a>
+        <a href="#" id="humburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <!-- Navbar end -->
+
+    <!-- Feather icon  -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- Javascript di home awal -->
+    <script src="js/scripthome.js" ;></script>
+  </body>
 </html>
