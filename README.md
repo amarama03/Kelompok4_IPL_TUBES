@@ -1,6 +1,6 @@
 # Kelompok4_IPL_TUBES
 # Sistem pengelolaan cafe Kopi Rehat
-Kelompok Ini terdiri dari :
+Kelompok 4 terdiri atas Mahasiswa:
 | NIM | Nama | Kelas |
 |---|---|---|
 | 3411201124 | Muhamad Ridwan Nur Rizki | DSE C |
