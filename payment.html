@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app="">
+
+-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FORM PAY</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script src="js/javascript.js" type="text/javascript"></script>
+    <script src="js/angular-1.7.5/angular.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+  <div class="container">
+    <h1 style="margin:10px;">PAYMENT</h1>
+    <form class="" action="index.html" method="post">
+      <input required class="input-form laf" type="text" name="" value="" placeholder="Nama">
+      <input required class="input-form laf" type="number" name="" value="" placeholder="08..">
+      <input required class="input-form-number laf" type="number" name="" value="1" placeholder="Jumlah" ng-model="jumlah">
+      <input required class="input-form-number laf" type="number" name="" value="20000" ng-model="harga">
+      <input disabled required class="input-form-value" type="number" name="" value="{{jumlah*harga}}" placeholder="Hasil" ng-model="Hasil">
+      <textarea class="input-form" cols="5" rows="5" name="comment" placeholder="Catatan" required></textarea>
+      </textarea>
+
+      <div style="overflow-x:auto;">
+        <label>Pilih Metode Pembayaran</label>
+        <table border=0 cellpadding="10">
+          <tr>
+            <th><input type="checkbox"  value=""><img src="img/bni.png" width="60px" height="20px"></th>
+            <th><input type="checkbox"  value=""><img src="img/logo-bca.png" width="60px" height="20px"></th>
+            <th><input type="checkbox"  value=""><img src="img/bri.png" width="60px" height="25px"></th>
+            <th><input type="checkbox"  value=""><img src="img/bjb.png" width="60px" height="30px"></th>
+          </tr>
+          <tr>
+            <th><input type="checkbox"  value=""><img src="img/visa.png" width="60px" height="30px"></th>
+            <th><input type="checkbox"  value=""><img src="img/alfa.jpg" width="70px" height="50px"></th>
+            <th><input type="checkbox"  value=""><img src="img/indomaret.png" width="60px" height="20px"></th>
+            <th><input type="checkbox"  value=""><img src="img/gopay.jpg" width="65px" height="40px"></th>
+          </tr>
+        </table>
+      </div>
+      <button class="btn-form-pay">Pay</button>
+      <button class="btn-form-change" id="myBtn">Batal</button>
+    </form>
+  </div>
+
+  <footer>
+    <p style="color:gray; margin-top:10px; margin-left:10px;">Dibuat pada tahun 2023 dengan senang hati</p>
+  </footer>
+
+  </body>
+</html>
