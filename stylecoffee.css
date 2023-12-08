@@ -11,11 +11,14 @@
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--background);
   color: #fff;
-  min-height: 2000px;
 }
 
 nav {
@@ -77,6 +80,38 @@ nav {
 
 #humburger-menu {
   display: none;
+}
+/* Navbar Pencarian   */
+.navbar .search-form {
+  position: absolute;
+  top: 100%;
+  right: 7%;
+  background-color: #fff;
+  width: 50rem;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: 0.3s;
+}
+.navbar .search-form.active {
+  transform: scaleY(1);
+}
+
+.navbar .search-form input {
+  height: 100%;
+  width: 100%;
+  font-size: 1.6rem;
+  color: var(--background);
+  padding: 1rem;
+}
+
+.navbar .search-form label {
+  cursor: pointer;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  color: var(--background);
 }
 
 /* css untuk halaman pertama mulai  */
@@ -141,6 +176,79 @@ nav {
 }
 /* akhir untuk halaman pertama  */
 
+/* css menu  */
+.menu {
+  padding: 8rem 7% 1.4rem;
+}
+.menu h2 {
+  text-align: center;
+  font-size: 2.6rem;
+  margin-bottom: 3rem;
+}
+
+.menu h2 span {
+  color: var(--primary);
+}
+
+.menu .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.menu .row .menu-card {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.menu .row .menu-card img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.menu .row .menu-card .menu-card-title {
+  margin: 1rem auto 0.5rem;
+}
+
+.menu .row .menu-card a {
+  color: #fff;
+}
+.menu .row .menu-card a:hover {
+  color: var(--primary);
+}
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+}
+footer .sosial {
+  padding: 1rem 0;
+  margin: 1rem;
+}
+
+footer .sosial a {
+  color: #fff;
+}
+footer .sosial a:hover,
+footer .link a:hover {
+  color: var(--background);
+}
+footer .link {
+  margin-bottom: 1.4rem;
+}
+footer .link a {
+  color: #fff;
+  padding: 0.7rem 1rem;
+}
+footer .creadit {
+  font-size: 0.8rem;
+}
+footer .creadit a {
+  color: var(--background);
+  font-weight: 700;
+}
 /*  Media Queries / ubah layar sesuai dengan device  */
 /* Laptop */
 @media (max-width: 1366px) {
@@ -181,6 +289,10 @@ nav {
   }
   .navbar .navbar-nav a:hover:after {
     transform: scaleX(0.2);
+  }
+  .navbar .search-form {
+    width: 90%;
+    right: 2rem;
   }
 }
 /* Handphone */
