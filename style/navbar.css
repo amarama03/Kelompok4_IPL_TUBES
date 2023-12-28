@@ -1,0 +1,97 @@
+:root {
+    --primary: #b6895b;
+    --background: #010101;
+  }
+
+.rehat-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgb(1, 1, 1, 0, 8);
+    border-bottom: 1px solid #8b6238;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+  
+  .rehat-navbar .rehat-navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  
+  .rehat-navbar .rehat-navbar-logo span {
+    color: var(--primary);
+  }
+  
+  .rehat-navbar .rehat-navbar-nav a {
+    color: #fff;
+    display: inline-block;
+    font-size: 1.3rem;
+    margin: 0 1rem;
+  }
+  
+  .rehat-navbar .rehat-navbar-nav a:hover {
+    color: var(--primary);
+  }
+  
+  .rehat-navbar .rehat-navbar-nav a:hover::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .rehat-navbar .rehat-navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  
+  .rehat-navbar .rehat-navbar-extra a {
+    color: #fff;
+    margin: 0 0.5rem;
+  }
+  
+  .rehat-navbar .rehat-navbar-extra a :hover {
+    color: var(--primary);
+  }
+  
+  #humburger-menu {
+    display: none;
+  }
+  /* rehat-navbar Pencarian   */
+  .rehat-navbar .search-form {
+    position: absolute;
+    top: 100%;
+    right: 7%;
+    background-color: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+  }
+  .rehat-navbar .search-form.active {
+    transform: scaleY(1);
+  }
+  
+  .rehat-navbar .search-form input {
+    height: 100%;
+    width: 100%;
+    font-size: 1.6rem;
+    color: var(--background);
+    padding: 1rem;
+  }
+  
+  .rehat-navbar .search-form label {
+    cursor: pointer;
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    color: var(--background);
+  }
