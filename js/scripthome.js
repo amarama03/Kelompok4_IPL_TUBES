@@ -1,5 +1,5 @@
 // Toggle class Active agar icon humburger bisa diklik
-const navbarNav = document.querySelector(".navbar-nav");
+const navbarNav = document.querySelector(".navbar .navbar-nav");
 // ketika humbuger di klik
 document.querySelector("#humburger-menu").onclick = () => {
   navbarNav.classList.toggle("active");

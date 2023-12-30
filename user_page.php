@@ -30,7 +30,7 @@ if(!isset($_SESSION['user_name'])){
       <h3>hi, <span>user</span></h3>
       <h1>welcome <span><?php echo $_SESSION['user_name'] ?></span></h1>
       <p>Selamat datang di Pusat Website kami, Selamat menikmati kopi khas dari Kopi Rehat.</p>
-      <a href="CoffeeRehat.html" class="btn">Home</a>
+      <a href="CoffeeRehat.php" class="btn">Home</a>
       <a href="logout.php" class="btn">logout</a>
    </div>
 
