@@ -78,15 +78,12 @@
         </div>
       </div>
       <div class="mb-3 row">
-        <label for="deskripsi" class="col-sm-2 col-form-label"
-          >Masukan Deskripsi</label
-        >
+        <label for="deskripsi" class="col-sm-2 col-form-label">Masukan Deskripsi</label>
         <div class="col-sm-10">
           <textarea required
-            class="form-control" name="deskripsi"
+            class="form-control"name="deskripsi"
             id="exampleFormControlTextarea1"
-            rows="3"><?php echo$deskripsi;?>
-          </textarea>
+            rows="3"><?php echo$deskripsi;?></textarea>
         </div>
       </div>
       <div class="mb-3 row mt-4">

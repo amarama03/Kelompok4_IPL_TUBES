@@ -19,6 +19,7 @@
     <!-- bootstrap -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" >
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- font -->
     <link rel="stylesheet" href="fontawesome/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
@@ -132,7 +133,7 @@
       <!-- MAIN -->
       <div class="container-fluid">
     <h1> Tambah Menu</h1> 
-     
+    
         <figure>
             <blockquote class="blockquote">
                  <p>Menambahkan Data Menu diKopi Rehat.</p>
@@ -145,8 +146,8 @@
             <thead>
                 <tr>
                     <th><center>no</center></th>
-                    <th>Nama </th>
-                    <th>Harga  </th>
+                    <th>Nama</th>
+                    <th>Harga</th>
                     <th>Foto Menu </th>
                     <th>Deskripsi</th>
                     <th>Aksi</th>
@@ -154,10 +155,7 @@
             </thead>
              <tbody>
                 <?php
-                    while ($result = mysqli_fetch_assoc($sql)){
-                        
-                    
-                ?>
+                    while ($result = mysqli_fetch_assoc($sql)){  ?>
                 <tr>
                     <td><center>
                         <?php
@@ -175,7 +173,7 @@
                         ?>" style="width: 100px;"></td>
                     <td><?php
                             echo $result['deskripsi'];
-                        ?> </td>
+                        ?></td>
                     <td>
                         <a href="kelola.php?ubah=<?php
                             echo $result['id_menu'];
