@@ -1,7 +1,20 @@
+<?php
+    include 'koneksi.php';
+    $query =  "SELECT * FROM menu";
+    $sql = mysqli_query($conn, $query);
+    $no = 0;
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <!-- bootstrap -->
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Rehat</title>
 
@@ -21,14 +34,14 @@
   </head>
   <body>
     <!-- Navbar start -->
-    <nav class="navbar">
+    <nav class="navbar ">
       <a href="#" class="Navbar-logo">Kopi <span>Rehat</span>.</a>
 
       <div class="navbar-nav">
         <a href="#home">Home</a>
         <a href="#menu">Menu</a>
         <a href="AboutUs.html">About Us</a>
-        <a href="#ContactUs">Contact Us</a>
+        <a href="AboutUs.html">Contact Us</a>
         <a href="logout.php">Logout</a>
       </div>
 
@@ -42,9 +55,9 @@
 
       <!-- code Search  mulai -->
       <div class="search-form">
-        <input type="search" id="search-box" placeholder="Cari Disini ..." />
-        <label for="search-box"><i data-feather="search"></i></label>
-      </div>
+      <input type="search" id="search-box" placeholder="search here...">
+      <label for="search-box"><i data-feather="search"></i></label>
+    </div>
 
       <!-- code Search  berakhir-->
     </nav>
@@ -56,71 +69,62 @@
     <section class="hero" id="home">
       <main class="content">
         <h1>Rehat dulu <span>Yuk</span></h1>
-        <p>Don`t FORGET FOLLOW ME</p>
-        <a href="#" class="cta">Beli Sekarang </a>
+        <p k>Don`t FORGET FOLLOW ME</p>
+        <a href="#menu" class="cta">Beli Sekarang </a>
       </main>
     </section>
 
     <!-- Halaman pertama selesai  -->
 
     <!-- halaman menu  mulai-->
-    <section id="menu" class="menu">
-      <h2><span>Menu</span> Kami</h2>
-      <div class="row">
-        <div class="menu-card">
-          <img
-            src="img/cappuccino.png"
-            alt="Cappuccino"
-            class="menu-card-img"
-          />
-          <h3 class="menu-card-title">- Cappuccino -</h3>
-          <p class="menu-card-harga">IDR 25K</p>
-          <a href="iconkeranjang.html" class="Buy"
-            ><i data-feather="shopping-cart"></i
-          ></a>
-        </div>
-        <div class="menu-card">
-          <img
-            src="img/Americanoo.png"
-            alt="Cappuccino"
-            class="menu-card-img"
-          />
-          <h3 class="menu-card-title">- Americano -</h3>
-          <p class="menu-card-harga">IDR 25K</p>
-          <a href="iconkeranjang.html" class="Buy"
-            ><i data-feather="shopping-cart"></i
-          ></a>
-        </div>
-        <div class="menu-card">
-          <img src="img/cocoa.png" alt="Cappuccino" class="menu-card-img" />
-          <h3 class="menu-card-title">- cocoa -</h3>
-          <p class="menu-card-harga">IDR 25K</p>
-          <a href="iconkeranjang.html" class="Buy"
-            ><i data-feather="shopping-cart"></i
-          ></a>
-        </div>
-        <div class="menu-card">
-          <img src="img/tea.png" alt="Cappuccino" class="menu-card-img" />
-          <h3 class="menu-card-title">- tea -</h3>
-          <p class="menu-card-harga">IDR 10K</p>
-          <a href="iconkeranjang.html" class="Buy"
-            ><i data-feather="shopping-cart"></i
-          ></a>
-        </div>
-        <div class="menu-card">
-          <img src="img/LATTE.png" alt="Cappuccino" class="menu-card-img" />
-          <h3 class="menu-card-title">- Latte -</h3>
-          <p class="menu-card-harga">IDR 25K</p>
-          <a href="iconkeranjang.html" class="Buy"
-            ><i data-feather="shopping-cart"></i
-          ></a>
-        </div>
-      </div>
-    </section>
+    <div class="table-responsive" id="menu">
+        <table class="table align-middle table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th><center>No</center></th>
+                    <th>Nama</th>
+                    <th>Harga</th>
+                    <th>Foto Menu</th>
+                    <th><center>Deskripsi</center></th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+             <tbody>
+                <?php
+                    while ($result = mysqli_fetch_assoc($sql)){
+                ?>
+                <tr>
+                    <td><center>
+                        <?php
+                            echo ++$no;
+                        ?>.
+                        </center></td>
+                    <td><?php
+                            echo $result['nama'];
+                        ?></td>
+                    <td><?php
+                            echo $result['harga'];
+                        ?></td>
+                    <td><img src="img/<?php
+                            echo $result['foto'];
+                        ?>" style="width: 80px;"></td>
+                    <td><?php
+                            echo $result['deskripsi'];
+                        ?></td>
+                    <td>
+                    <a href="iconkeranjang.html" id="iconkeranjang"><i data-feather="shopping-cart" color=white></i></a>
+                    </td>
+                </tr>
+                <?php
+                    }
+                ?>
+            </tbody>
+        </table>
+    </div>
     <!-- halaman menu  berakhir -->
 
     <!-- bagian Contact Us mulai  -->
-    <footer id="ContactUs" class="footer">
+    <footer  class="footer">
       <div class="sosial">
         <a href="#"><i data-feather="instagram"></i></a>
         <a href="#"><i data-feather="x"></i></a>
