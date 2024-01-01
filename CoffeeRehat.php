@@ -40,8 +40,8 @@
       <div class="navbar-nav">
         <a href="#home">Home</a>
         <a href="#menu">Menu</a>
-        <a href="AboutUs.html">About Us</a>
-        <a href="AboutUs.html">Contact Us</a>
+        <a href="AboutUs.php">About Us</a>
+        <a href="AboutUs.php#contact-us">Contact Us</a>
         <a href="logout.php">Logout</a>
       </div>
 
@@ -134,9 +134,9 @@
       <div class="link">
         <a href="#home">Home</a>
         <a href="#menu">Menu</a>
-        <a href="AboutUs.html">About Us</a>
+        <a href="AboutUs.php">About Us</a>
         <a href="login_form.php">Login</a>
-        <a href="#ContactUs">Contact Us</a>
+        <a href="AboutUs.php#contact-us">Contact Us</a>
       </div>
       <div class="creadit">
         <p>Created by <a href="">Kelompok 4</a>|&copy 2023.</p>

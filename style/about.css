@@ -1,14 +1,19 @@
-/*******************************/
-/********* General CSS *********/
-/*******************************/
+/* General CSS */
 body {
-    color: #757575;
+    min-height: 100vh;
+    align-items: center;
+    color: #ffffff;
     background: #ffffff;
+    background-image: url("../img/bg2.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;    
 }
 a:hover,
 a:active,
 a:focus {
-    color: #719a0a;
+    color: #f3b815;
     outline: none;
     text-decoration: none;
 }
@@ -69,11 +74,7 @@ a:focus {
     font-size: inherit;
     margin-left: 0;
 }
-
-
-/*******************************/
-/******* Page Header CSS *******/
-/*******************************/
+/* Page Header CSS */
 .page-header {
     position: relative;
     margin-bottom: 45px;
@@ -125,15 +126,12 @@ a:focus {
         font-size: 18px;
     }
 }
-
-/*******************************/
-/********** Menu CSS ***********/
-/*******************************/
+/* Menu CSS */
 .coffee {
     position: relative;
     width: 100%;
     padding: 90px 0 60px 0;
-    margin: 45px 0;
+    margin: 45px 0;    
 }
 
 .coffee .coffee-item {
@@ -142,7 +140,7 @@ a:focus {
     margin-bottom: 30px;
     padding: 50px 30px 30px;
     text-align: center;
-    background: #ffffff;
+    background: #ffffff2d;
     border-radius: 15px;
     box-shadow: 0 0 30px rgba(0, 0, 0, .08);
     transition: .3s;
@@ -163,7 +161,7 @@ a:focus {
 }
 
 .coffee .coffee-item:hover i {
-    color: #719a0a;
+    color: #ffffff;
 }
 
 .coffee .coffee-item i::after {
@@ -181,7 +179,7 @@ a:focus {
 }
 
 .coffee .coffee-item:hover i::after {
-    border: 3px dotted #719a0a;
+    border: 3px dotted #000000;
     border-right: transparent;
     border-bottom: transparent;
 }
@@ -210,14 +208,9 @@ a:focus {
 .coffee .coffee-item a:hover::after {
     width: 100%;
     left: 0;
-    background: #719a0a;
+    background: #000000;
 }
-
-
-
-/*******************************/
-/********** About CSS **********/
-/*******************************/
+/* About CSS */
 .about {
     position: relative;
     width: 100%;
@@ -362,9 +355,7 @@ a:focus {
         margin-bottom: 30px;
     }
 }
-/*******************************/
-/********* Contact CSS *********/
-/*******************************/
+/* Contact CSS */
 .contact {
     position: relative;
     width: 100%;
@@ -428,7 +419,7 @@ a:focus {
 }
 
 .contact .contact-social a:hover {
-    color: #719a0a;
+    color: #fbaf32;
 }
 
 .contact .contact-form iframe {
@@ -458,11 +449,7 @@ a:focus {
     padding: 0;
     list-style-type: none;
 }
-
-
-/*******************************/
-/********* Footer CSS **********/
-/*******************************/
+/* Footer CSS */
 .footer {
     position: relative;
     margin-top: 45px;
@@ -486,7 +473,7 @@ a:focus {
     padding-bottom: 10px;
     font-size: 22px;
     font-weight: 700;
-    color: #ffff;
+    color: #000000;
 }
 
 .footer .footer-contact h2::after,
@@ -498,7 +485,7 @@ a:focus {
     height: 2px;
     bottom: 0;
     left: 0;
-    background: #719a0a;
+    background: #fbaf32;
 }
 
 .footer .footer-link a {
@@ -548,7 +535,7 @@ a:focus {
 }
 
 .footer .footer-social a:hover {
-    background: #719a0a;
+    background: #fbaf32 ;
 }
 
 .footer .footer-social a:last-child {
@@ -576,7 +563,6 @@ a:focus {
     font-size: 14px;
     font-weight: 700;
 }
-
 .footer .copyright {
     position: relative;
     width: 100%;
@@ -584,17 +570,14 @@ a:focus {
     text-align: center;
     background: #333;
 }
-
 .footer .copyright p {
     margin: 0;
     display: inline-block;
     color: #fff;
 }
-
 .footer .copyright p a {
     color: #fbaf32;
 }
-
 .footer .copyright p a:hover {
-    color: #719a0a;
+    color: #000000;
 }

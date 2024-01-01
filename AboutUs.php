@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>About Us</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+         
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Nunito:600,700" rel="stylesheet"> 
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+        <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="stylecoffee.css" />
+        <link rel="stylesheet" href="style/navbar.css" />
+        <link rel="stylesheet" href="style/about.css">
+    </head>
+
+    <body>
+        <!-- rehat-navbar start -->
+        <nav class="rehat-navbar">
+            <a href="#" class="rehat-navbar-logo">Kopi <span>Rehat</span>.</a>
+            <div class="rehat-navbar-nav">
+                <a href="CoffeeRehat.php">Home</a>
+                <a href="CoffeeRehat.php#menu">Menu</a>
+                <a href="#">About Us</a>
+                <a href="#contact-us">Contact Us</a>
+                <a href="logout.php">Logout</a>
+            </div>
+            <div class="rehat-navbar-extra">
+                <a href="#" id="search-button"><i data-feather="search"></i></a>
+                <a href="iconkeranjang.html" id="iconkeranjang"
+                ><i data-feather="shopping-cart"></i
+                ></a>
+                <a href="#" id="humburger-menu"><i data-feather="menu"></i></a>
+            </div>
+            <!-- code Search  mulai -->
+            <div class="search-form">
+                <input type="search" id="search-box" placeholder="Cari Disini ..." />
+                <label for="search-box"><i data-feather="search"></i></label>
+            </div>
+        <!-- code Search  berakhir-->
+        </nav>
+        
+        <!-- Page Header Mulai -->
+        <div class="page-header mb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>About Us</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="CoffeeRehat.php">Home</a>
+                        <a href="AboutUs.php">About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header Akhir -->
+        <!-- Fasilitas Mulai -->
+        <div class="coffee mt-0">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4">
+                        <div class="coffee-item">
+                            <i class="flaticon-burger"></i>
+                            <h2>Kopi</h2>
+                            <p>
+                                Kopi, minuman global yang bervariasi dalam rasa, diseduh dari biji kopi dengan air panas. Kafein di dalamnya memberikan semangat, sementara berbagai metode penyeduhan menciptakan pengalaman unik. Dalam budaya global, kopi menjadi sarana pertemuan dan kenikmatan santai. 
+                            </p>
+                            <a href="#contact-us">TEAM - KOPI REHAT</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="coffee-item">
+                            <i class="flaticon-snack"></i>
+                            <h2>Design</h2>
+                            <p>
+                                Desain Caffe menggabungkan kecintaan kami pada desain kreatif dan kopi luar biasa. Kami menawarkan pengalaman unik di mana setiap cangkir kopi disajikan dalam lingkungan yang dirancang dengan indah. Kunjungi Kami tempat di mana seni dan cita rasa bertemu. 
+                            </p>
+                            <a href="#contact-us">TEAM - KOPI REHAT</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="coffee-item">
+                            <i class="flaticon-cocktail"></i>
+                            <h2>Musik</h2>
+                            <p>
+                                Musik menciptakan pengalaman bersantai yang memikat. Kombinasi aroma dan rasa kopi bersama musisi - musisi musik terkenal dan kesukaan kalian dapat mempengaruhi suasana hati, memperkaya pengalaman nikmat kopi, dan bahkan merangsang kreativitas.
+                            </p>
+                            <a href="#contact-us">TEAM - KOPI REHAT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fasilitas Akhir -->
+        
+
+        <!-- About Mulai -->
+        <div class="about">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="about-img">
+                            <img src="CaffeImage.jpg" alt="caf">
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-header">
+                                <p>About Us</p>
+                                <h2>Coffe Rehat Since 2023</h2>
+                            </div>
+                            <div class="about-text">
+                                <p>
+                                    Kopi Rehat adalah kafe kecil di sudut kota ramai yang dikelola oleh pecinta kopi. Meskipun sederhana, kafe ini populer di kalangan penduduk setempat. Dengan aroma harum kopi setiap pagi, interior yang nyaman, dan menu beragam, tempat ini tidak hanya menjadi tempat untuk menikmati kopi, tetapi juga sebuah komunitas di mana orang berkumpul, berbagi cerita, dan menciptakan kenangan. Rudi Tabuti pemilik yang ramah, sering berinteraksi dengan pelanggan, menciptakan atmosfer yang penuh semangat.
+                                </p>
+                                <p>
+                                    Dengan desain interior yang modern dan nyaman, setiap kunjungan menjadi lebih dari sekadar menikmati kopi. Menu kami menyajikan berbagai pilihan kopi, mulai dari espresso klasik hingga kreasi kopi spesial yang eksklusif.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About Akhir -->
+        
+        <!-- Footer Mulai -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="footer-contact">
+                                    <h2 id="contact-us">Hubungi Kami</h2>
+                                    <p><i class="fa fa-map-marker-alt"></i>Kp.Legok Hangser, Kec.Ciuhuy, Kab.Bandung, Jawa Barat, Indonesia</p>
+                                    <p><i class="fa fa-phone-alt"></i>+62 895-1234-5678</p>
+                                    <p><i class="fa fa-envelope"></i>info@kopirehat.com</p>
+                                    <div class="footer-social">
+                                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="footer-link">
+                                    <h2>Tautan Langsung</h2>
+                                    <a href="">Syarat Penggunaan</a>
+                                    <a href="">Kebijakan Pribadi</a>
+                                    <a href="">Cookies</a>
+                                    <a href="">Bantuan</a>
+                                    <a href="">FQAs</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="footer-newsletter">
+                            <h2>Laporan Berkala</h2>
+                            <p>
+                                Ikuti kami di media sosial untuk mendapatkan update cepat dan berita eksklusif. Terima kasih telah menjadi bagian dari komunitas Cafe Coffee yang luar biasa!
+                            <p>
+                            </p>
+                            Salam kopi 
+                            </p>
+                            <div class="form">
+                                <input class="form-control" placeholder="Email kami">
+                                <button class="btn custom-btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <p>Copyright &copy; <a href="#">Coffe Rehat</a>, All Right Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Footer Akhir -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    </body>
+</html>
